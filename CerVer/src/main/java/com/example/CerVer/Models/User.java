@@ -1,13 +1,10 @@
-package com.example.CerVer.Models.User;
-import java.io.Serializable;
+package com.example.CerVer.Models;
 import jakarta.persistence.*;
 
 
 	@Entity
-	@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
-	public class User implements Serializable {
-		private static final long serialVersionUID = 1L;
-
+	public class User {
+		
 		private String address;
 
 		private String designation;

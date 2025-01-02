@@ -1,13 +1,10 @@
-package com.example.CerVer.Models.Certificates;
-import java.io.Serializable;
+package com.example.CerVer.Models;
 import jakarta.persistence.*;
 import java.util.Date;
 
 
 	@Entity
-	@NamedQuery(name="Certificate.findAll", query="SELECT c FROM Certificate c")
-	public class Certificate implements Serializable {
-		private static final long serialVersionUID = 1L;
+	public class Certificate {
 
 		private String certificateId;
 

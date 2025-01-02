@@ -1,14 +1,11 @@
-package com.example.CerVer.Models.Transaction;
-import java.io.Serializable;
+package com.example.CerVer.Models;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
 
 @Entity
-@NamedQuery(name="Transaction.findAll", query="SELECT t FROM Transaction t")
-public class Transaction implements Serializable {
-	private static final long serialVersionUID = 1L;
+public class Transaction {
 
 	private BigDecimal amount;
 

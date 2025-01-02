@@ -1,17 +1,10 @@
-package com.example.CerVer.Models.Verification;
-import java.io.Serializable;
+package com.example.CerVer.Models;
 import jakarta.persistence.*;
 import java.util.Date;
 
 
-/**
- * The persistent class for the verification database table.
- * 
- */
 @Entity
-@NamedQuery(name="Verification.findAll", query="SELECT v FROM Verification v")
-public class Verification implements Serializable {
-	private static final long serialVersionUID = 1L;
+public class Verification {
 
 	private String certificateId;
 
